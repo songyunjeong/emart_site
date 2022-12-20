@@ -1,0 +1,30 @@
+/*-------- find_pw --------*/
+.find_pw {
+  width: 650px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto 200px;
+}
+.find_pw .title {
+  font-size: 28px;
+  text-align: center;
+  margin: 100px 0 50px;
+}
+.find_pw .sub_title {
+  display: inline-block;
+  width: 230px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 30px 5px 0 140px;
+}
+.find_pw .input_box {
+  display: inline-block;
+  width: 150px;
+}
+.find_pw .find_btn_box {
+  text-align: center;
+}
+.find_pw .find_btn {
+  margin-top: 90px;
+  cursor: pointer;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비밀번호 찾기, 이마트몰 SSG.COM</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./js/login.js" defer></script>
+  <script src="./js/find_pw.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/find_pw.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header01">
+      <div class="ssg_logo">
+        <input type="checkbox" id="ssg_chk">
+
+        <label for="ssg_chk">
+          <img src="./images_header/ssg_logo.jpg" alt="SSG 로고">
+        </label>
+
+        <div class="ssg_brand">
+          <div class="ssg">
+            <a href="#!">SSG.COM</a>
+            <label for="ssg_chk">
+              <i class="fa-solid fa-circle-chevron-up"></i>
+            </label>
+          </div>          
+
+          <div class="brand_li">
+            <ul class="left">
+              <li><a href="./index.html">이마트몰</a></li>
+              <li><a href="#!">트레이더스</a></li>
+              <li><a href="#!">스타벅스</a></li>
+              <li><a href="#!">S.I.VILLAGE</a></li>
+              <li><a href="#!">프리미엄아울렛</a></li>
+            </ul>
+            <ul class="right">
+              <li><a href="#!">신세계몰</a></li>
+              <li><a href="#!">신세계백화점</a></li>
+              <li><a href="#!">까사미아</a></li>
+              <li><a href="#!">CHICOR</a></li>
+              <li><a href="#!">스타필드</a></li>
+            </ul>
+          </div>        
+        </div>
+      </div><!--ssg_logo-->
+
+
+      <div class="rank">
+        <ul>
+          <li><a href="#!">1. 매콤한 맛&nbsp;&nbsp;<span style="color: #e25454; font-size: 5px;">▲</span></a></li>
+          <li><a href="#!">2. 달달한 맛&nbsp;&nbsp;<span style="color: #e25454; font-size: 5px;">▲</span></a></li>
+          <li><a href="#!">3. 국물내기용&nbsp;&nbsp;-</a></li>
+          <li><a href="#!">4. 글루타치온&nbsp;&nbsp;new</a></li>
+          <li><a href="#!">5. 바베큐&nbsp;&nbsp;<span style="color: #e25454; font-size: 5px;">▲</span></a></li>
+          <li><a href="#!">6. 초코하임&nbsp;&nbsp;<span style="color: #e25454; font-size: 5px;">▲</span></a></li>
+          <li><a href="#!">7. 캡슐커피&nbsp;&nbsp;<span style="color: #18256d; font-size: 5px;">▼</span></a></li>
+          <li><a href="#!">8. 머루포도&nbsp;&nbsp;-</a></li>
+          <li><a href="#!">9. 파타고니아 키즈&nbsp;&nbsp;<span style="color: #e25454; font-size: 5px;">▲</span></a></li>
+          <li><a href="#!">10. 가그린&nbsp;&nbsp;<span style="color: #18256d; font-size: 5px;">▼</span></a></li>
+          <li><a href="#!">1. 매콤한 맛&nbsp;&nbsp;<span style="color: #e25454; font-size: 5px;">▲</span></a></li>
+        </ul>
+      </div><!--rank-->
+      
+
+      <nav class="gnb">
+        <ul>
+          <li><a href="javascript:login()">로그인</a></li>
+          <li>·</li>
+          <li><a href="./join.html">회원가입</a></li>
+          <li>·</li>
+          <li><a href="#!">고객센터</a></li>
+        </ul>
+        <ul>
+          <li><a href="#!"><img src="./images_header/gnb_01.jpg" alt="찜"></a></li>
+          <li><a href="#!"><img src="./images_header/gnb_02.jpg" alt="마이페이지"></a></li>
+          <li><a href="#!"><img src="./images_header/gnb_03.jpg" alt="배송"></a></li>
+          <li><a href="#!"><img src="./images_header/gnb_04.jpg" alt="장바구니"></a></li>
+        </ul>
+      </nav><!--gnb-->
+    </div><!--header01-->
+
+    <div class="header02_box">
+      <div class="header02">
+        <div class="emart_logo">
+          <a href="./index.html"><img src="./images_header/logo.JPG" alt="이마트 로고"></a>
+        </div><!--emart_logo-->
+  
+        <div class="search_box">
+          <input class="search" type="textbox" placeholder="자주 생활용품 최대 50% 할인">
+          <input type="submit" id="submit">
+          
+          <label for="submit"><img src="./images_header/search.jpg" alt="검색"></label>
+        </div><!--search_box-->
+      </div><!--header02-->
+    </div><!--header02_box-->
+  </header><!--header-->
+
+  <section class="find_pw">
+    <div class="title">비밀번호 찾기</div>
+    <div class="find_box">
+      <div class="sub_title">아이디를 입력하세요.</div>
+      <div class="input_box">
+        <input type="text" class="user_id" placeholder="(emart)" style="width: 150px; margin-right: 10px;">  
+      </div>
+    </div>
+    <div class="find_box">
+      <div class="sub_title">주민등록번호를 입력하세요.</div>
+      <div class="input_box">
+        <input type="text" class="user_number" placeholder="(1234561234567)" style="width: 150px; margin-right: 10px;">
+      </div>
+    </div>
+    <div class="find_btn_box">
+      <button class="find_btn" style="width: 150px;">비밀번호 찾기</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer01_box">
+      <div class="footer01">
+        <ul>
+          <h5>공지사항</h5>
+          <li class="btn"><a href="#!" style="text-decoration: none;">더보기<span>&gt;</span></a></li>
+          <li><a href="#!">SSG.COM 등급쿠폰 혜택 변경 안내</a></li>
+          <li><a href="#!">메인서비스 점검 안내</a></li>
+          <li><a href="#!">스마일클럽 이용약관 개정안내 [개정일 : 2022.09.15]</a></li>
+          <li><a href="#!">SSG.COM 개인정보처리방침 개정 안내 [개정일 : 2022.09.15]</a></li>
+        </ul>
+  
+        <ul>
+          <h5>당첨자발표</h5>
+          <li class="btn"><a href="#!" style="text-decoration: none;">더보기<span>&gt;</span></a></li>
+          <li><a href="#!">미장센 콤부차 레몬진저 샴푸 820ml 체험단 모집</a></li>
+          <li><a href="#!">[레고] 9월 신상품 체험단 모집 3차_(207명)</a></li>
+          <li><a href="#!">[9월 3주] 에바 알머슨 특별전 : Andando</a></li>
+          <li><a href="#!">[모바일] 극장판 검정고무신 : 즐거운 나의 집</a></li>
+        </ul>
+  
+        <ul>
+          <h5>이마트 서비스 안내</h5>
+          <li><a href="#!">이마트 점포찾기 (휴점일)</a></li>
+          <li><a href="#!">이마트 고객센터</a></li>
+          <li><a href="#!">신세계 포인트카드</a></li>
+          <li><a href="#!">SSG PAY</a></li>
+        </ul>
+      </div>
+    </div><!--footer01-->
+
+
+    <div class="footer02_box">
+      <div class="footer02">
+        <ul class="left">
+          <li><a href="#!">회사소개</a></li>
+          <li><a href="#!">개인정보처리 방침</li></a>
+          <li><a href="#!">이용약관</li></a>
+          <li><a href="#!">전자금융거래이용약관</li></a>
+          <li><a href="#!">청소년 보호방침</li></a>
+          <li><a href="#!">지식재산권센터</li></a>
+          <li><a href="#!">입점상담</li></a>
+          <li><a href="#!">이마트점포 입점상담</li></a>
+          <li><a href="#!">광고신청</li></a>
+        </ul>
+  
+        <ul class="right">
+          <input type="checkbox" id="site_chk">
+
+          <label for="site_chk" class="site_chk_open site_chk">
+            <div>
+              <p>FAMILY SITE</p>
+              <p><i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+          </label>
+          <label for="site_chk" class="site_chk_close site_chk">
+            <div>
+              <p>FAMILY SITE</p>
+              <p><i class="fa-solid fa-chevron-up"></i></p>
+            </div>
+          </label>
+          
+          <div class="family_site">
+            <ul>
+              <li><a href="#!">신세계그룹</a></li>
+              <li><a href="#!">신세계포인트</a></li>
+              <li class="category">RETAIL</li>
+              <li><a href="#!">신세계백화점</a></li>
+              <li><a href="#!">이마트</a></li>
+              <li><a href="#!">이마트 트레이더스</a></li>
+              <li><a href="#!">이마트 에브리데이</a></li>
+              <li><a href="#!">이마트24</a></li>
+              <li><a href="#!">신세계TV쇼핑</a></li>
+              <li><a href="#!">프리미엄 아울렛</a></li>
+              <li><a href="#!">스타필드</a></li>
+              <li><a href="#!">신세계면세점(명동)</a></li>
+              <li><a href="#!">신세계면세점(부산)</a></li>
+              <li><a href="#!">신세계인터내셔날</a></li>
+              <li class="category">FOOD</li>
+              <li><a href="#!">신세계푸드</a></li>
+              <li><a href="#!">신세계 L&B</a></li>
+              <li><a href="#!">스타벅스커피 코리아</a></li>
+              <li class="category">LEISURE</li>
+              <li><a href="#!">조선호텔앤리조트</a></li>
+              <li class="category">INFRASTRUCTURE</li>
+              <li><a href="#!">신세계건설</a></li>
+              <li><a href="#!">신세계아이앤씨</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div><!--footer02-->
+
+
+    <div class="footer03">
+      <ul>
+        (주) 에스에스지닷컴
+      </ul><!--1-->
+      <ul>
+        <li><i class="fa-solid fa-headset"></i> 1577-3419</li>
+        <li class="btn">전화문의 전 클릭<span>&gt;</span></li>
+        <li class="btn">1 : 1 고객센터톡<span>&gt;</span></li>
+        <li>고객센터/전자금융거래분쟁처리</li>
+      </ul><!--2-->
+      <ul>
+        <li>대표자: 강희석&nbsp;&nbsp;&nbsp;서울특별시 강남구 테헤란로 231&nbsp;&nbsp;&nbsp;사업자등록번호: 870-88-01143&nbsp;&nbsp;&nbsp;통신판매업 신고번호: 제2022-서울강남-03751호</li><br />
+        <li>개인정보보호책임자: 김우진&nbsp;&nbsp;&nbsp;Fax: 02-2068-7118&nbsp;&nbsp;&nbsp;ssg@ssg.com</li>
+      </ul><!--3-->
+      <ul>
+        <li class="btn">사업자 정보확인<span>&gt;</span></li>
+        <li class="btn">소비자분쟁해결기준<span>&gt;</span></li>
+      </ul><!--4-->
+      <ul>
+        SSG.COM 호스팅서비스 사업자 : (주)에스에스지닷컴
+      </ul><!--5-->
+      <ul>
+        <li><img src="./images_footer/icon_01.png" alt=""></li>
+        <li>한국온라인 쇼핑협회<br>정회원사</li>
+        <li><img src="./images_footer/icon_02.png" alt=""></li>
+        <li>우리은행 채무지급보증 안내</li><br />
+        <li style="color: #666; margin-right: 15px;">당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</li>
+        <li class="btn">서비스 가입사실 확인<span>&gt;</span></li>
+      </ul><!--6-->
+      <ul>
+        (주)에스에스지닷컴 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠사업 진흥법 등에 의하여 엄격히 금지됩니다. <a href="#!">콘텐츠 산업 진흥법에따른 표시 ></a>
+      </ul><!--7-->
+      <ul class="sns">
+        <li>SSG.COM</li>
+        <li><a href="#!"><img src="./images_footer/facebook.png" alt=""></a></li>
+        <li><a href="#!"><img src="./images_footer/instagram.png" alt=""></a></li>
+      </ul><!--8-->
+      <ul class="mobile">
+        <li>모바일 앱으로 만나세요</li>
+        <li><img src="./images_footer/qr.png" alt=""></li>
+      </ul><!--9-->
+    </div><!--footer03-->
+  </footer><!--footer-->
+</body>
+</html>
