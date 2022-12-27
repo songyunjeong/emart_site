@@ -1,3 +1,95 @@
+// id pw change_event
+let userIdCk = document.getElementById('user_id');
+let userPwCk = document.getElementById('user_pw');
+let userPwCkRe = document.getElementById('user_pw_re');
+
+userIdCk.addEventListener('change', checkId);
+userPwCk.addEventListener('change', checkPw);
+userPwCkRe.addEventListener('change', checkPwRe);
+
+function checkId() {
+  if(userIdCk.value.length < 6 || userIdCk.value.length > 15) {
+    document.querySelector('.id_message').textContent = '6~15자로 입력하세요.';
+  } else {
+    document.querySelector('.id_message').textContent = '사용가능한 아이디입니다.';
+  }
+}
+
+function checkPw() {
+  if(userPwCk.value.length < 4) {
+    document.querySelector('.pw_message').textContent = '4자 이상 입력하세요.';
+  } else {
+    document.querySelector('.pw_message').textContent = '사용가능한 비밀번호입니다.';
+  }
+}
+
+function checkPwRe() {
+  if(userPwCk.value != 0 && userPwCkRe.value != 0) {
+    if(userPwCk.value == userPwCkRe.value) {
+      document.querySelector('.pw_re_message').textContent = '비밀번호가 일치합니다.';
+    } else {
+      document.querySelector('.pw_re_message').textContent = '비밀번호가 다릅니다.';
+    }
+  } else {
+    document.querySelector('.pw_re_message').textContent = '';
+  }
+}
+
+setInterval(checkId, 1);
+setInterval(checkPw, 1);
+setInterval(checkPwRe, 1);
+
+
+// #id_check_btn click_event (아이디 중복확인 버튼)
+let userId = '';
+let idData = '';
+let userPw = '';
+let userPwRe = '';
+
+$('#id_chk_btn').click(function() {
+  userId = $('#user_id').val();
+  idData = new Array('greencomputer', 'redcomputer', 'bluecomputer', 'yellowcomputer', 'blackcomputer');
+
+  for(let i in idData) {
+    if(userId == idData[i]) {
+      alert('사용할 수 없는 아이디 입니다.');
+      $('#user_id').val('').focus();
+      break;
+    } else if(i == 4) {
+      alert('사용가능한 아이디입니다.');
+      $('#user_pw').focus();
+    } 
+  }
+})
+
+
+// tel change_event
+const telFirst = document.getElementById('tel_first');
+const telMid = document.getElementById('tel_mid');
+const telLast = document.getElementById('tel_last');
+
+telFirst.addEventListener('keyup', moveTel1);
+telMid.addEventListener('keyup', moveTel2);
+
+function moveTel1() {
+  if(telFirst.value.length == 3) {
+    telMid.focus();
+  }
+}
+
+function moveTel2() {
+  if(telMid.value.length == 4) {
+    telLast.focus();
+  }
+}
+
+
+// mail change_event
+$('#mail_select').change(function() {
+  $('#mail_site').val($('#mail_select').val());
+})
+
+
 // like_food_info click_event (관심 카테고리 FOOD)
 const likeFoodNo = document.getElementById('like_food_no');
 
@@ -121,48 +213,9 @@ chk3.addEventListener('click', function() {
 })
 
 
-
-
-
-$(function() {
-  // #id_check_btn click_event (아이디 중복확인 버튼)
-  let userId = '';
-  let idData = '';
-  let userPw = '';
-  let userPwRe = '';
-
-  $('#id_chk_btn').click(function() {
-    userId = $('#user_id').val();
-    idData = new Array('greencomputer', 'redcomputer', 'bluecomputer', 'yellowcomputer', 'blackcomputer');
-
-    for(let i in idData) {
-      if(userId == idData[i]) {
-        alert('사용할 수 없는 아이디 입니다.');
-        $('#user_id').val('').focus();
-        break;
-      } else if(i == 4) {
-        alert('사용가능한 아이디입니다.')
-        $('#user_pw').focus();
-      } 
-    }
-  })
-
-
-  // #pw_chk_btn click_event (비밀번호 재확인 버튼)
-  $('#pw_chk_btn').click(function() {
-    userPw = $('#user_pw').val();
-    userPwRe = $('#user_pw_re').val();
-
-    if(userPw == userPwRe) {
-      alert('사용할 수 있습니다. 비밀번호가 일치합니다.');
-    } else {
-      alert('사용할 수 없습니다. 비밀번호가 다릅니다.');
-    }
-  })
-
-
-  //.join_btn click_event (회원가입 버튼)
-  $('.join_btn').click(function() {
-    alert('회원가입 되었습니다.')
-  })
+//.join_btn click_event (회원가입 버튼)
+$('.join_btn').click(function() {
+  alert('회원가입 되었습니다.');
+  window.close();
+  window.open('../index.html');
 })

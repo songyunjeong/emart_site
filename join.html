@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입, 이마트몰 SSG.COM</title>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="./js/login.js" defer></script>
-  <script src="./js/join.js" defer></script>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/join.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./js/login.js" defer></script>
+  <script src="./js/join.js" defer></script>
 </head>
 <body>
-  <header class="header" id="header">
+  <header class="header">
     <div class="header01">
       <div class="ssg_logo">
         <input type="checkbox" id="ssg_chk">
@@ -102,27 +102,29 @@
     </div><!--header02_box-->
   </header><!--header-->
 
-  <section class="join">
+  <form class="join">
     <div class="title">회원가입</div>
 
     <div class="login_info info">
       <div class="sub_title">로그인 정보<span style="color: firebrick; font-size: 12px; margin-left: 10px;">(*필수입력)</span></div>
 
-      <div id="id">
+      <div id="id" class="id">
         <p>아이디<span style="color: firebrick;">*</span></p>
-        <input type="text" id="user_id" placeholder="아이디를 입력하세요." required>
+        <input type="text" id="user_id" placeholder="아이디를 입력해 주세요." required>
         <button id="id_chk_btn" style="width: 70px;">중복 확인</button>
+        <p class="id_message"></p>
       </div><!--id-->
 
-      <div id="pw">
+      <div id="pw" class="pw">
         <p>비밀번호<span style="color: firebrick;">*</span></p>
         <input type="password" id="user_pw" placeholder="비밀번호를 입력하세요." required>
+        <p class="pw_message"></p>
       </div><!--pw-->
 
-      <div id="pw_re">
+      <div id="pw_re" class="pw_re">
         <p>비밀번호 확인<span style="color: firebrick;">*</span></p>
         <input type="password" id="user_pw_re" placeholder="확인을 위해 비밀번호를 한번 더 입력하세요." required>
-        <button id="pw_chk_btn" style="width: 90px">비밀번호 확인</button>
+        <p class="pw_re_message"></p>
       </div>
     </div><!--login_info-->
 
@@ -142,26 +144,26 @@
           <option>U+</option>
           <option>알뜰폰</option>
         </select>
-        <input type="text" placeholder="000" required>
-        <p class="call">-</p>
-        <input type="text" placeholder="0000" required>
-        <p class="call">-</p>
-        <input type="text" placeholder="0000" required>
+        <input type="text" id="tel_first" maxlength="3" placeholder="000" required>
+        <p class="tel">-</p>
+        <input type="text" id="tel_mid" maxlength="4" placeholder="0000" required>
+        <p class="tel">-</p>
+        <input type="text" id="tel_last" maxlength="4" placeholder="0000" required>
       </div>
 
       <div class="mail">
         <p>이메일<span>(선택)</span></p>
         <input type="text">
         <p>@</p>
-        <input type="text">
-        <select style="width: 110px;">
-          <option selected>선택하세요</option>
-          <option id="op01">naver.com</option>
-          <option id="op02">hanmail.net</option>
-          <option id="op03">nate.com</option>
-          <option id="op04">yahoo.co.kr</option>
-          <option id="op05">korea.com</option>
-          <option>직접입력</option>
+        <input type="text" id="mail_site" value="">
+        <select id="mail_select" style="width: 110px;">
+          <option value="" selected>선택하세요</option>
+          <option value="naver.com">naver.com</option>
+          <option value="hanmail.net">hanmail.net</option>
+          <option value="nate.com">nate.com</option>
+          <option value="yahoo.co.kr">yahoo.co.kr</option>
+          <option value="korea.com">korea.com</option>
+          <option value="">직접입력</option>
         </select>
       </div>
     </div>
@@ -225,8 +227,8 @@
       </div>  
     </div><!--stipulation-->
 
-    <button type="submit" class="join_btn">가입하기</button>
-  </section>
+    <button type="button" class="join_btn">가입하기</button>
+  </form>
 
   <footer class="footer">
     <div class="footer01_box">

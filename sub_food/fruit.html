@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>카테고리 > 과일 - 이마트몰, 당신과 가장 가까운 이마트</title>
 
-  <script src="../js/login.js"></script>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="./css/fruit.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="../js/login.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </head>
 <body>
-  <header class="header" id="header">
+  <header class="header">
     <div class="header01">
       <div class="ssg_logo">
         <input type="checkbox" id="ssg_chk">
@@ -571,8 +573,21 @@
             <li><a href="#!">신상품</a></li>
             <li><a href="#!">기획전</a></li>
             <li><a href="#!">이벤트&쿠폰</a></li>
-            <li><a href="#!">공식 브랜드관 <i class="fa-solid fa-chevron-down"></i></a></li>
+            <li class="brand">
+              <a href="#!">공식 브랜드관 <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
           </ul>
+
+          <div class="brand_sheet">
+            <ul>
+              <li><a href="#!">No Brand</a></li>
+              <li><a href="#!">PEACOCK</a></li>
+              <li><a href="#!">DAIZ</a></li>
+              <li><a href="#!">JAJU</a></li>
+              <li><a href="#!">ELECTRO MART</a></li>
+              <li><a href="#!">전체보기</a></li>
+            </ul>
+          </div>
         </nav><!--lnb02-->
 
         <div class="delivery">
@@ -581,6 +596,11 @@
             <i class="fa-solid fa-chevron-down" style="margin-left: 20px;"></i>
           </a>
         </div><!--delivery-->
+
+        <div class="delivery_sheet">
+          <p>쓱-배송 시간은<br />로그인 후 확인 가능합니다.</p>
+          <a href="javascript:login()">로그인하기</a>
+        </div><!--delivery_sheet-->
       </div><!--header03-->      
     </div><!--header03_box-->
   </header><!--header-->
@@ -592,7 +612,7 @@
       <div class="category"><a href="../index.html">이마트몰</a> / <a href="./fruit.html">과일</a> / <a href="./fruit.html">전체보기</a></div>
       <div class="category_li">
         <ul>
-          <li><a href="#!">사과/배</a></li>
+          <li><a href="#!" style="font-weight: 600;">사과/배</a></li>
           <li><a href="#!">포도/자두/복숭아</a></li>
           <li><a href="#!">망고/열대과일</a></li>
           <li><a href="#!">냉동과일/간편과일</a></li>
@@ -902,13 +922,13 @@
         </ul>
       </div>
       <div class="delivery_box">
-        <a href="#!" style="font-weight: bold; text-decoration: underline;">로그인</a> 후<br />쓱-배송시간을<br />확인하세요</li>
+        <a href="javascript:login()" style="font-weight: bold; text-decoration: underline;">로그인</a> 후<br />쓱-배송시간을<br />확인하세요</li>
       </div>
     </div>    
   </section><!--wing_banner-->
 
   <div class="top_btn">
-   <a href="#header">TOP</a>
+    TOP
   </div><!--top_btn-->
 </body>
 </html>

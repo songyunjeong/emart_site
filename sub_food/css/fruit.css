@@ -36,6 +36,9 @@
 }
 .category_box .category_li li {margin-bottom: 5px;}
 .category_box .category_li li:last-child {margin-bottom: 0;}
+.category_box .category_li li a:hover {
+  font-weight: 600;
+}
 
 
 /*-------- product_box --------*/

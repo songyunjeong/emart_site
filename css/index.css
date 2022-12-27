@@ -42,9 +42,8 @@ img {display: block;}
 .header01 .ssg_logo .ssg_brand {
   width: 235px; height: 240px;
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  box-sizing: border-box;
+  border: 1px solid #ccc; box-sizing: border-box;
+  border-radius: 20px;  
   position: absolute;
   top: 10px; left: 12px;
   z-index: 30;
@@ -206,6 +205,7 @@ img {display: block;}
   border: 1px solid #333; box-sizing: border-box;
   font-size: 12px;
   padding-left: 10px;
+  padding-right: 10px;
   float: left;
 }
 #submit {display: none;}
@@ -379,6 +379,9 @@ img {display: block;}
 
 
 /*-------- header03 lnb02 --------*/
+.header03 .lnb02 {
+  position: relative;
+}
 .header03 .lnb02 ul {
   width: 800px; height: 50px;
   font-size: 0;
@@ -397,6 +400,50 @@ img {display: block;}
 .header03 .lnb02 ul li:hover a,
 .header03 .lnb02 ul li:hover i {color: #ffd140;}
 
+.header03 .lnb02 .brand_sheet {
+  display: none;
+  background-color: white;
+  width: 150px; height: 240px;
+  border: 1px solid #ccc; box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 45px; left: 763px;
+  z-index: 21;
+}
+.header03 .lnb02 .brand_sheet li {
+  display: block;
+  width: 150px; height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.header03 .lnb02 .brand_sheet li a {
+  display: block;
+  color: #333;
+}
+.header03 .lnb02 .brand_sheet li:last-child {
+  background-color: #333;
+}
+.header03 .lnb02 .brand_sheet li:last-child a {
+  color: white;
+}
+.header03 .lnb02 .brand_sheet li:hover {
+  background-color: #eee;
+}
+.header03 .lnb02 .brand_sheet li:hover a {
+  font-weight: 500;
+  color: #333;
+}
+.header03 .lnb02 .brand_sheet li:last-child:hover {
+  background-color: #292a2e;
+}
+.header03 .lnb02 .brand_sheet li:last-child:hover a {
+  font-weight: 400;
+  color: #ffd140;
+}
+
 
 /*-------- header03 delivery --------*/
 .header03 .delivery a {
@@ -411,6 +458,37 @@ img {display: block;}
   float: right;
 }
 .header03 .delivery i {color: #ffd140;}
+
+.header03 .delivery_sheet {
+  display: none;
+  width: 250px; height: 100px;
+  background-color: white;
+  border: 1px solid #ccc; box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  top: 45px; left: 990px;
+  z-index: 21;
+}
+.header03 .delivery_sheet p {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.header03 .delivery_sheet a {
+  display: block;
+  width: 80px; height: 25px;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  line-height: 23px;
+  margin-left: 85px;
+}
+.header03 .delivery_sheet a:hover {
+  background-color: #292a2e;
+  color: #ffd140;
+}
 
 
 /*-------- visual_main_box --------*/
@@ -639,14 +717,15 @@ img {display: block;}
   margin-bottom: 20px;
   padding: 3px 0 5px 20px;
   box-sizing: border-box;
-  animation-name: hit;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
 .hit .img_box .text01 {font-size: 14px;}
 .hit .img_box .text02 {
   font-size: 12px;
   color: #999;
+}
+.hit .img_box .text:hover {
+  background-color: rgba(224, 224, 224, 0.4);
+  cursor: pointer;
 }
 
 .hit .img_box .text_big {
@@ -655,9 +734,6 @@ img {display: block;}
   border: 1px solid #ccc; box-sizing: border-box;
   padding: 15px 0 0 30px;
   box-sizing: border-box;
-  animation-name: hit;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
 .hit .img_box .text_big li:first-child {
   font-size: 12px;
@@ -669,6 +745,10 @@ img {display: block;}
 .hit .img_box .text_big .text_big02 {
   font-size: 12px;
   color: #666;
+}
+.hit .img_box .text_big:hover {
+  background-color: rgba(224, 224, 224, 0.4);
+  cursor: pointer;
 }
 
 
@@ -1287,6 +1367,7 @@ img {display: block;}
 .top_btn {
   width: 50px; height: 40px;
   background-color: #292a2e;
+  color: white;
   font-size: 12px;
   text-align: center;
   line-height: 40px;
@@ -1294,7 +1375,6 @@ img {display: block;}
   bottom: 35px; right: 15px;
   z-index: 90;
 }
-.top_btn a {
-  display: block;
-  color: white;
+.top_btn:hover {
+  cursor: pointer;  
 }
