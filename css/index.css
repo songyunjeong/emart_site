@@ -908,8 +908,10 @@ img {display: block;}
 .buyer_box .buyer_sheet .img {
   width: 400px; height: 400px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 .buyer_box .buyer_sheet .img img {width: 400px; height: 400px;}
+.buyer_box .buyer_sheet .img:hover img {transform: scale(1.02)}
 .buyer_box .buyer_sheet .text {
   width: 400px; height: 100px;
   font-size: 0;
@@ -984,7 +986,6 @@ img {display: block;}
   transition: all 0.3s;
 }
 .recipe_box .recipe .recipe_on p {color: white;}
-.recipe_box .recipe ul:hover {cursor: pointer;}
 .recipe_box .recipe ul:hover .recipe_on {bottom: 0;}
 
 
