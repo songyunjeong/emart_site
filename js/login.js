@@ -1,11 +1,3 @@
-function login() {
-  let loginPopup = window.open('../login.html', '_blank', 'width=500, height=480, top=150, left=100');
-
-  if(loginPopup == null) {
-    alert('팝업이 차단되었습니다. 팝업차단을 해제하고 새로고침 하십시오.');
-  }
-}
-
 $(function() {
   let id = 'emart';
   let pw = '1234';

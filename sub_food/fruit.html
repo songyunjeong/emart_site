@@ -8,11 +8,21 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="./css/fruit.css">
-  
+  <link rel="stylesheet" href="./css/fruit.css">  
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="../js/login.js" defer></script>
   <script src="../js/main.js" defer></script>
+  <script type="module" src="./js/fruit.js" defer></script>
+
+  <script>
+    function login() {
+      let loginPopup = window.open('../login.html', '_blank', 'width=500, height=480, top=150, left=100');
+
+      if(loginPopup == null) {
+        alert('팝업이 차단되었습니다. 팝업차단을 해제하고 새로고침 하십시오.');
+      }
+    }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -639,102 +649,7 @@
     </div><!--category_box-->
 
     <div class="product_box">
-      <ul class="product_box01">
-        <li class="product01"><a href="../detail_food_fruit/apple.html">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="emart_mall">이마트몰</li>
-            <li class="fresh">신선보장</li>
-            <li style="font-weight: bold;">E-MART FRESH</li>
-            <li>유명산지 사과 4~11입/봉 (1.8kg)</li>
-            <li class="price">10,800</li>
-            <li class="won">원</li>
-            <li class="sale">12,800</li>
-            <li class="sale_won">원</li>
-          </ul></a>
-        </li><!--product01-->
-        <li class="product02"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="emart_mall">이마트몰</li>
-            <li class="fresh">신선보장</li>
-            <li>저탄소인증 사과 1.4kg/봉</li>
-            <li class="price">7,980</li>
-            <li class="won">원</li>
-          </ul></a>
-        </li><!--product02-->
-        <li class="product03"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="delivery">새벽배송</li>
-            <li class="fresh">신선보장</li>
-            <li>[당도선별] 유명산지 청송 햇 홍로사과 1.5kg (봉)</li>
-            <li class="price">9,800</li>
-            <li class="won">원</li>
-            <li class="sale">12,800</li>
-            <li class="sale_won">원</li>
-          </ul></a>
-        </li><!--product03-->
-        <li class="product04"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="emart_mall">이마트몰</li>
-            <li class="fresh">신선보장</li>
-            <li>GAP 죽장사과 4~6입/봉 (1.3kg내외)</li>
-            <li class="price">5,980</li>
-            <li class="won">원</li>
-          </ul></a>
-        </li><!--product02-->
-      </ul><!--product_box01-->
-
-      <ul class="product_box02">
-        <li class="product05"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="delivery">새벽배송</li>
-            <li class="fresh">신선보장</li>
-            <li>못생겨도 맛좋은 보조개 햇 홍로사과 3kg (봉)</li>
-            <li class="price">12,800</li>
-            <li class="won">원</li>
-            <li class="sale">14,800</li>
-            <li class="sale_won">원</li>
-          </ul></a>
-        </li><!--product05-->
-        <li class="product06"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="emart_mall">이마트몰</li>
-            <li class="fresh">신선보장</li>
-            <li>친환경 자연주의</li>
-            <li>저탄소인증 세척사과 2kg/박스</li>
-            <li class="price">13,800</li>
-            <li class="won">원</li>
-          </ul></a>
-        </li><!--product06-->
-        <li class="product07"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="delivery">새벽배송</li>
-            <li class="fresh">신선보장</li>
-            <li>[당도선별] 천안 신고배 3입 1.9kg (팩)</li>
-            <li class="price">12,800</li>
-            <li class="won">원</li>
-            <li class="sale">15,800</li>
-            <li class="sale_won">원</li>
-          </ul></a>
-        </li><!--product07-->
-        <li class="product08"><a href="#!">
-          <div class="img"></div>
-          <ul class="text">
-            <li class="emart_mall">이마트몰</li>
-            <li class="fresh">신선보장</li>
-            <li>친환경 자연주의</li>
-            <li>저탄소인증 배3~4입/봉 (1.8kg내외)</li>
-            <li class="price">9,980</li>
-            <li class="won">원</li>
-          </ul></a>
-        </li><!--product08-->
-      </ul><!--product_box02-->
+      <!--fruit_data-->
     </div><!--product_box-->
   </section><!--food_fruit-->
 

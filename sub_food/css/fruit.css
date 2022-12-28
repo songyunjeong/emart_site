@@ -42,49 +42,23 @@
 
 
 /*-------- product_box --------*/
-.product_box>ul {
-  width: 1240px; height: 460px;
+.product_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1240px;
 }
-.product_box .product_box01 {
+.product_box .product {
+  margin-right: 20px;
+}
+.product_box .product:nth-child(4n) {
+  margin-right: 0;
   margin-bottom: 20px;
-  overflow: hidden;
 }
-.product_box .product_box01>li{
-  margin-right: 20px;
-  float: left;
-}
-.product_box .product_box01>li:last-child {margin-right: 0;}
-
-.product_box .product_box02 {margin-bottom: 50px;}
-.product_box .product_box02>li{
-  margin-right: 20px;
-  float: left;
-}
-.product_box .product_box02>li:last-child {margin-right: 0;}
 
 .product_box .img {
   width: 295px; height: 350px;
   margin-bottom: 10px;
-  transition: all 0.3s;
 }
-.product_box01 .product01 .img {background-image: url(../images/fruit_01.jpg);}
-.product_box01 .product01 .img:hover {background-image: url(../images/fruit_01_on.jpg);}
-.product_box01 .product02 .img {background-image: url(../images/fruit_02.jpg);}
-.product_box01 .product02 .img:hover {background-image: url(../images/fruit_02_on.jpg);}
-.product_box01 .product03 .img {background-image: url(../images/fruit_03.jpg);}
-.product_box01 .product03 .img:hover {background-image: url(../images/fruit_03_on.jpg);}
-.product_box01 .product04 .img {background-image: url(../images/fruit_04.jpg);}
-.product_box01 .product04 .img:hover {background-image: url(../images/fruit_04_on.jpg);}
-
-.product_box02 .product05 .img {background-image: url(../images/fruit_05.jpg);}
-.product_box02 .product05 .img:hover {background-image: url(../images/fruit_05_on.jpg);}
-.product_box02 .product06 .img {background-image: url(../images/fruit_06.jpg);}
-.product_box02 .product06 .img:hover {background-image: url(../images/fruit_06_on.jpg);}
-.product_box02 .product07 .img {background-image: url(../images/fruit_07.jpg);}
-.product_box02 .product07 .img:hover {background-image: url(../images/fruit_07_on.jpg);}
-.product_box02 .product08 .img {background-image: url(../images/fruit_08.jpg);}
-.product_box02 .product08 .img:hover {background-image: url(../images/fruit_08_on.jpg);}
-
 .product_box .text {
   width: 295px; height: 100px;
   font-size: 0;
@@ -113,6 +87,9 @@
 .product_box .text .fresh {
   display: inline-block;
   color: red;
+}
+.product_box .text .emart_fresh {
+  font-weight: bold;
 }
 .product_box .text .price {
   display: inline-block;

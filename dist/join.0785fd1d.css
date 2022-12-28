@@ -1,0 +1,175 @@
+/*-------- join --------*/
+.join {
+  width: 650px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto 100px;
+}
+.join .title {
+  font-size: 28px;
+  text-align: center;
+  margin: 100px 0 50px;
+}
+.join .sub_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.join .mail span {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.join .mail input:nth-child(2),
+.join .mail input:nth-child(4) {
+  width: 160px;
+}
+.join .mail p:nth-child(3) {
+  width: 10px;
+  margin: 0 10px;
+}
+.join .mail select:nth-child(5) {
+  margin-left: 40px;
+}
+
+
+/*-------- info --------*/
+.info > div {
+  font-size: 0;
+  margin-bottom: 25px;
+}
+.info > div p {
+  display: inline-block;
+  width: 150px;
+  font-size: 14px;
+}
+.info > div input {
+  display: inline-block;
+  width: 350px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+/*-------- info login --------*/
+.info .id {
+  position: relative;
+}
+.info .id_message {
+  width: 300px;
+  font-size: 12px;
+  color: firebrick;
+  position: absolute;
+  top: 35px; left: 157px;
+}
+.info #id_chk_btn {
+  display: inline-block;
+  width: 60px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.info .pw {
+  position: relative;
+}
+.info .pw_message {
+  width: 300px;
+  font-size: 12px;
+  color: firebrick;
+  position: absolute;
+  top: 35px; left: 157px;
+}
+
+.info .pw_re {
+  position: relative;
+}
+.info .pw_re_message {
+  width: 300px;
+  font-size: 12px;
+  color: firebrick;
+  position: absolute;
+  top: 35px; left: 157px;
+}
+
+
+/*-------- info member --------*/
+.member_info .phone select {
+  margin-right: 20px;
+}
+.member_info .phone input {
+  width: 66px;
+  text-align: center;
+}
+.member_info .phone .tel {
+  width: 5px;
+  margin: 0 15px;
+}
+
+
+/*-------- info like --------*/
+.like_info .sub_title span {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.like_info fieldset {
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.like_info fieldset legend {
+  font-size: 14px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.like_info fieldset input {
+  margin-right: 5px;
+}
+.like_info fieldset p {
+  display: inline-block;
+  width: 105px;
+}
+
+
+/*-------- stipulation --------*/
+.join .stipulation .sub_title {
+  margin-bottom: 20px;
+}
+.join .stipulation > div {
+  margin-bottom: 10px;
+}
+.join .stipulation > div:nth-child(2) {
+  font-weight: bold;
+}
+.join .stipulation > div input {
+  display: inline-block;
+  margin-right: 10px;
+}
+.join .stipulation > div input:hover {
+  cursor: pointer;
+}
+.join .stipulation > div p {
+  display: inline-block;
+}
+
+
+/*-------- join_btn --------*/
+.join .join_btn {
+  display: block;
+  width: 300px; height: 50px;
+  background-color: #eee;
+  outline: none;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 100px auto 150px;
+}
+
+/*# sourceMappingURL=/join.0785fd1d.css.map */
