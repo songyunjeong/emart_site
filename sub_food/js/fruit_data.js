@@ -16,7 +16,7 @@ const applePear = [
   },
   {
     id: 'product02',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_02.jpg',
     imgOn: './images/fruit_02_on.jpg',
     logo: '이마트몰',
@@ -31,7 +31,7 @@ const applePear = [
   },
   {
     id: 'product03',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_03.jpg',
     imgOn: './images/fruit_03_on.jpg',
     logo: '이마트몰',
@@ -46,7 +46,7 @@ const applePear = [
   },
   {
     id: 'product04',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_04.jpg',
     imgOn: './images/fruit_04_on.jpg',
     logo: '이마트몰',
@@ -61,7 +61,7 @@ const applePear = [
   },
   {
     id: 'product05',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_05.jpg',
     imgOn: './images/fruit_05_on.jpg',
     logo: '이마트몰',
@@ -76,7 +76,7 @@ const applePear = [
   },
   {
     id: 'product06',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_06.jpg',
     imgOn: './images/fruit_06_on.jpg',
     logo: '이마트몰',
@@ -91,7 +91,7 @@ const applePear = [
   },
   {
     id: 'product07',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_07.jpg',
     imgOn: './images/fruit_07_on.jpg',
     logo: '이마트몰',
@@ -106,7 +106,7 @@ const applePear = [
   },
   {
     id: 'product08',
-    link: '#!',
+    link: '../detail_food_fruit/apple.html',
     img: './images/fruit_08.jpg',
     imgOn: './images/fruit_08_on.jpg',
     logo: '이마트몰',
