@@ -1,6 +1,6 @@
 # E-MART 사이트 (적응형)
 
-이마트, 마켓컬리, 쿠팡 등을 참고하여 프로토타입 작성 후 HTML, CSS, JS로 구현했습니다.
+이마트, 마켓컬리, 쿠팡 등의 디자인을 참고하여 프로토타입 작성 후 HTML, CSS, JS로 구현했습니다.
 
 🖥️ [웹 사이트 보러가기(사이트)](https://songyunjeong.github.io/emart_site)
 
